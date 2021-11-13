@@ -1,12 +1,9 @@
-I am a front-end web developer leveraging an extensive philosophy and psychology background to build a more intuitive user experience on the web. I’m currently working toward a certificate in full stack development from Michigan State University with newly developed skills in JavaScript, CSS, and responsive web design. I’m known as an innovative problem solver passionate about web development, with a focus on accessibility.
+I am a front-end web developer leveraging an extensive philosophy and psychology background to build a more intuitive user experience on the web. I’m currently working toward a certificate in full stack development from Michigan State University with newly developed skills in a variety of technologies and languages. I’m known as an innovative problem solver passionate about web development, with a focus on accessibility.
 
-With each project, my aim is to best engage my audience for an impactful user experience. For example, I recently worked on a team of four to develop a single-page COVID-19 informational app that helps individuals in the COVID-19 pandemic access reliable information about national, continental, and state data. Even more recently, I've been working on an application which allows users to access information about different plant and animal species to plan their gardens and other farm goings-on. I’m looking forward to using my skills as part of a fast-paced, quality-driven team to build better experiences on the web.
+With each project, my aim is to best engage my audience for an impactful user experience. For example, I recently worked on a team of four to develop a single-page COVID-19 informational app that helps individuals in the COVID-19 pandemic access reliable information about national, continental, and state data. I also worked as part of a team to create a full-stack web application which allows users to track various farm activities and plant, animal, and weather information. I’m looking forward to using my skills as part of a fast-paced, quality-driven team to build better experiences on the web.
 
-- My portfolio is available at http://www.maparks.com
-- I’m looking to collaborate on website development and other projects to improve my skillset. Other websites I've developed include: https://maxaeon.github.io/covid (role: collaborator), www.mxparksphilosophy.com, www.ucmapchapters.org, and https://www.phil-hub.com
-- 📫 reach me at maparks@ucdavis.edu
+My portfolio is available at https://maxaeon.github.io/portfolio/
 
-<!---
-maxaeon/maxaeon is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+I’m looking to collaborate on website development and other projects to improve my skillset. Websites I've developed include: http://www.maparks.com, https://maxaeon.github.io/covid (role: collaborator), https://chicken-running.herokuapp.com/ (role: collaborator), www.ucmapchapters.org, and https://www.phil-hub.com.
+
+📫 reach me at maxaeonparks@gmail.com
