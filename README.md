@@ -12,13 +12,8 @@ My portfolio is available at https://maxaeon.github.io/portfolio/
 I’m looking to collaborate on website development and other projects to improve my skillset. Websites I've developed include: http://www.maparks.com, https://maxaeon.github.io/covid (role: collaborator), https://chicken-running.herokuapp.com/ (role: collaborator), www.ucmapchapters.org, and https://www.phil-hub.com.
 
 ## Contact
-
-maxaeonparks@gmail.com 
-810-429-0508
+maxaeonparks@gmail.com <br>
+810-429-0508<br>
 www.maparks.com
-\social[linkedin]{m-a-parks-828152217}
-\social[youtube]{UC4YpB3hJDijbpywb429I9VA}
-\social[facebook]{M.A.Parks}
-\social[github]{maxaeon}
 
 <img align="right" alt="MaxAeon's Github Stats" src="https://github-readme-stats.vercel.app/api?username=MaxAeon&show_icons=true&hide_border=true" />
