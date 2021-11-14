@@ -1,4 +1,4 @@
-![me (2)](https://user-images.githubusercontent.com/87254760/141664748-786a5646-4b8b-4f96-b12a-db21efde07bf.jpg)
+![me (2)](https://user-images.githubusercontent.com/87254760/141665020-2f5cfa9a-f411-44ab-ba5d-d2d0fde9dab9.jpg)
 
 # MaxAeon
 
