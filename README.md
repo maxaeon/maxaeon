@@ -14,6 +14,8 @@ I’m looking to collaborate on website development and other projects to improv
 ## Contact
 maxaeonparks@gmail.com <br>
 810-429-0508<br>
-www.maparks.com
+www.maparks.com <gr>
+www.linkedin.com/in/maxaeon
+
 
 <img align="right" alt="MaxAeon's Github Stats" src="https://github-readme-stats.vercel.app/api?username=MaxAeon&show_icons=true&hide_border=true" />
