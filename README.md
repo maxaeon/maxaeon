@@ -14,7 +14,7 @@ I’m looking to collaborate on website development and other projects to improv
 ## Contact
 maxaeonparks@gmail.com <br>
 810-429-0508<br>
-www.maparks.com <gr>
+www.maparks.com <br>
 www.linkedin.com/in/maxaeon
 
 
