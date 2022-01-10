@@ -7,7 +7,7 @@ I am a front-end web developer leveraging an extensive philosophy and psychology
 
 With each project, my aim is to best engage my audience for an impactful user experience. For example, I recently worked on a team of four to develop a single-page COVID-19 informational app that helps individuals in the COVID-19 pandemic access reliable information about national, continental, and state data. I also worked as part of a team to create a full-stack web application which allows users to track various farm activities and plant, animal, and weather information. I’m looking forward to using my skills as part of a fast-paced, quality-driven team to build better experiences on the web.
 
-My portfolio is available at https://maxaeon.github.io/portfolio/
+My portfolio is available at https://maxaeon.github.io/react-portfolio/
 
 I’m looking to collaborate on website development and other projects to improve my skillset. Websites I've developed include: http://www.maparks.com, https://maxaeon.github.io/covid (role: collaborator), https://chicken-running.herokuapp.com/ (role: collaborator), www.ucmapchapters.org, and https://www.phil-hub.com.
 
