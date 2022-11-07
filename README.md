@@ -18,4 +18,4 @@ www.maparks.com <br>
 www.linkedin.com/in/maxaeon
 
 
-<img align="right" alt="MaxAeon's Github Stats" src="https://github-readme-stats.vercel.app/api?username=MaxAeon&show_icons=true&hide_border=true" />
+<img align="right" alt="MaxAeon's Github Stats" src="https://github-readme-stats.vercel.app/api?username=maxaeon&show_icons=true&hide_border=true" />
