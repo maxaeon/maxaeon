@@ -1,30 +1,31 @@
-![me (2)](https://user-images.githubusercontent.com/87254760/141665020-2f5cfa9a-f411-44ab-ba5d-d2d0fde9dab9.jpg)
+# Max Aeon Parks
 
-# MaxAeon
+I'm a researcher and educator specializing in the Philosophy of Artificial Intelligence (AI) and Human Factors within AI systems, particularly from a computer science perspective. My work investigates how AI can be ethically developed and integrated into human environments, focusing on bias mitigation, emotional intelligence benchmarks, and the extended cognition hypothesis.
 
-## About Me
-I am a front-end web developer leveraging an extensive philosophy and psychology background to build a more intuitive user experience on the web. I recently completed a certificate in full stack development from Michigan State University with newly developed skills in a variety of technologies and languages. I’m known as an innovative problem solver passionate about web development, with a focus on accessibility.
+## Research Interests
 
-With each project, my aim is to best engage my audience for an impactful user experience. For example, I recently worked on a team of four to develop a single-page COVID-19 informational app that helps individuals in the COVID-19 pandemic access reliable information about national, continental, and state data. I also worked as part of a team to create a full-stack web application which allows users to track various farm activities and plant, animal, and weather information. I’m looking forward to using my skills as part of a fast-paced, quality-driven team to build better experiences on the web.
+* **Philosophy of AI**: Ethical implications of AI systems, theories of AI consciousness, and the philosophical foundations of AI-driven decision-making.
+* **Human Factors in AI**: Interdisciplinary research on human-AI interaction, emotional intelligence in AI, and usability of AI systems from a cognitive science and computer science standpoint.
 
-My portfolio is available at https://maxaeon.github.io/react-portfolio/
+## Educational Projects
 
-I’m looking to collaborate on website development and other projects to improve my skillset. Websites I've developed include: http://www.maparks.com, https://maxaeon.github.io/covid (role: collaborator), https://chicken-running.herokuapp.com/ (role: collaborator), as well as since abandoned sites like ucmapchapters.org and phil-hub.com. I have also worked on other projects such as https://maxaeon.github.io/adco-employee-events/ and https://maxaeon.github.io/autorepair/.
+* **Duck-Rabbit Φ Game**: An interactive philosophy game designed for children that introduces fundamental philosophical concepts through engaging storytelling and interactive gameplay. This game aims to foster critical thinking and philosophical inquiry among young audiences. \[Playable version coming soon to my website!]
+
+## Teaching
+
+I regularly teach courses in Philosophy, Ethics, and STEM-related subjects at the college level. My approach emphasizes critical thinking, applied ethics, and the thoughtful integration of AI into education.
+
+## Artwork
+
+Alongside my academic work, I am an artist focusing on existential aesthetics and AI-generated art. My artistic projects explore the intersections between technology, identity, and the human condition, serving as an expressive complement to my academic research.
 
 ## Contact
-maxaeonparks@gmail.com <br>
-810-429-0508<br>
-www.maparks.com <br>
-www.linkedin.com/in/maxaeon
 
+Feel free to reach out for collaborations, speaking engagements, or questions:
 
-<img align="right" alt="MaxAeon's Github Stats" src="https://github-readme-stats.vercel.app/api?username=maxaeon&show_icons=true&hide_border=true" />
-
-## Editing the Site
-The landing page and topic pages are simple HTML files. Edit `index.html` in the
-repository root to update the main navigation or text. Each topic folder
-(`philosophy-ai/`, `computer-science/`, `philosophy/`, `art/`) also contains an
-`index.html` you can modify with your own content.
+* **Email**: \[[maxaeonparks@gmail.com](mailto:maxaeonparks@gmail.com)]
+* **GitHub**: \[github.com/maxaeon]
+* **Website**: [maparks.com](https://maparks.com)
 
 ## Enabling GitHub Pages
 1. Open your repository **Settings** and navigate to **Pages**.
