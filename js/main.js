@@ -1,6 +1,9 @@
 // Highlight active navigation link based on current page
 // Adds 'active' class to the link whose pathname matches the current location
 
+// Capture the script element's src before registering the DOMContentLoaded event
+const currentScriptSrc = document.currentScript.src;
+
 window.addEventListener('DOMContentLoaded', () => {
   const links = document.querySelectorAll('nav a[href]');
   const current = window.location.pathname.replace(/index\.html$/, '').replace(/\/$/, '');
@@ -16,7 +19,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   const footer = document.querySelector('footer');
   if (footer) {
-    const footerUrl = new URL('../footer.html', document.currentScript.src);
+    const footerUrl = new URL('../footer.html', currentScriptSrc);
     fetch(footerUrl)
       .then(r => r.text())
       .then(html => { footer.innerHTML = html; })
