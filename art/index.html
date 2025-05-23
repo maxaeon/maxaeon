@@ -22,20 +22,19 @@
         <section class="featured">
             <div class="featured-slider">
                 <figure class="featured-image">
-                    <img src="images/duckrabbit.jpeg" alt="Duck–rabbit illusion painting">
-                    <figcaption>
-                        Shared by <a href="https://dailynous.com/duck-rabbit-season-max-parks/">Daily Nous</a>.
-                    </figcaption>
+                    <a href="https://dailynous.com/duck-rabbit-season-max-parks/">
+                        <img src="images/duckrabbit.jpeg" alt="Duck–rabbit illusion painting">
+                    </a>
+                    <figcaption>Shared by Daily Nous.</figcaption>
                 </figure>
 
                 <figure class="featured-image">
-                    <img src="images/telescope.jpg" alt="Telescope painting">
-                    <figcaption>
-                        Took second place in <a href="https://www.mackinawcityareaartscouncil.org/about/under-a-dark-sky-art-contest/">the Mackinaw City Arts Council Dark Sky art contest</a>.
-                    </figcaption>
+                    <a href="https://www.mackinawcityareartscouncil.org/about/under-a-dark-sky-art-contest/">
+                        <img src="images/telescope.jpg" alt="Telescope painting">
+                    </a>
+                    <figcaption>Took second place in the Mackinaw City Arts Council Dark Sky art contest.</figcaption>
                 </figure>
             </div>
-            <p id="featured-caption" class="featured-caption"></p>
         </section>
 
         <section class="night-sky">
@@ -43,7 +42,6 @@
                 <figure><img src="images/ade-night-photography.jpg" alt="Ade Night Photography"><figcaption>Ade Night Photography</figcaption></figure>
                 <figure><img src="images/desiree-night.jpg" alt="Desiree at night"><figcaption>Desiree at night</figcaption></figure>
                 <figure><img src="images/firefly.jpg" alt="Firefly at night"><figcaption>Firefly at night</figcaption></figure>
-                <figure><img src="images/spacetime.jpg" alt="Spacetime painting"><figcaption>Spacetime</figcaption></figure>
             </div>
             <p class="night-sky-desc">These works, together with the telescope painting, are part of a night sky collection.</p>
         </section>
@@ -58,18 +56,8 @@
     <script>
     document.addEventListener('DOMContentLoaded', () => {
         const slider = document.querySelector('.featured-slider');
-        const captionEl = document.getElementById('featured-caption');
-        if (slider && captionEl) {
+        if (slider) {
             const figures = Array.from(slider.querySelectorAll('.featured-image'));
-            const captions = figures.map(f => f.querySelector('figcaption').innerHTML);
-
-            const updateCaption = () => {
-                const index = Math.round(slider.scrollLeft / slider.clientWidth);
-                captionEl.innerHTML = captions[index] || '';
-            };
-
-            slider.addEventListener('scroll', () => requestAnimationFrame(updateCaption));
-
             figures.forEach((fig, i) => {
                 fig.addEventListener('click', () => {
                     slider.scrollTo({ left: i * slider.clientWidth, behavior: 'smooth' });
@@ -95,9 +83,18 @@
 
                 const checkDone = () => {
                     if (loaded === wrappers.length) {
-                        wrappers
-                            .sort((a, b) => a.img.naturalHeight - b.img.naturalHeight)
-                            .forEach(w => gallery.appendChild(w.figure));
+                        const groups = {};
+                        wrappers.forEach(w => {
+                            const h = Math.round(w.img.naturalHeight / 100) * 100;
+                            if (!groups[h]) groups[h] = [];
+                            groups[h].push(w.figure);
+                        });
+                        Object.keys(groups)
+                            .map(Number)
+                            .sort((a, b) => a - b)
+                            .forEach(h => {
+                                groups[h].forEach(fig => gallery.appendChild(fig));
+                            });
                     }
                 };
 
@@ -106,8 +103,7 @@
                     'telescope.jpg',
                     'ade-night-photography.jpg',
                     'desiree-night.jpg',
-                    'firefly.jpg',
-                    'spacetime.jpg'
+                    'firefly.jpg'
                 ]);
 
                 images.filter(name => !excluded.has(name)).forEach(name => {
