@@ -10,6 +10,7 @@ window.addEventListener('DOMContentLoaded', () => {
       .replace(/index\.html$/, '').replace(/\/$/, '');
     if (linkPath === current) {
       link.classList.add('active');
+      link.setAttribute('aria-current', 'page');
     }
   });
 });
