@@ -16,7 +16,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
   const footer = document.querySelector('footer');
   if (footer) {
-    fetch('/footer.html')
+    const footerUrl = new URL('../footer.html', document.currentScript.src);
+    fetch(footerUrl)
       .then(r => r.text())
       .then(html => { footer.innerHTML = html; })
       .catch(err => console.error('Footer load failed', err));
