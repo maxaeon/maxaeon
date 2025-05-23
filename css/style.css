@@ -33,6 +33,11 @@ main img {
     max-width: 300px;
 }
 
+/* Smaller images for certain sections */
+.small-image {
+    max-width: 150px;
+}
+
 /* Limit the size of hero images on the home page */
 #about img,
 #education img {
