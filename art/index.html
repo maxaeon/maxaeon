@@ -18,6 +18,33 @@
     <main id="main">
         <h1>Art Portfolio</h1>
         <p>Gallery and information about artistic projects.</p>
+
+        <section class="featured">
+            <figure class="featured-image">
+                <img src="images/duckrabbit.jpeg" alt="Duck–rabbit illusion painting">
+                <figcaption>
+                    Shared by <a href="https://dailynous.com/duck-rabbit-season-max-parks/">Daily Nous</a>.
+                </figcaption>
+            </figure>
+
+            <figure class="featured-image">
+                <img src="images/telescope.jpg" alt="Telescope painting">
+                <figcaption>
+                    Took second place in <a href="https://www.mackinawcityareaartscouncil.org/about/under-a-dark-sky-art-contest/">the Mackinaw City Arts Council Dark Sky art contest</a>.
+                </figcaption>
+            </figure>
+        </section>
+
+        <section class="night-sky">
+            <div class="night-sky-grid">
+                <figure><img src="images/ade-night-photography.jpg" alt="Ade Night Photography"><figcaption>Ade Night Photography</figcaption></figure>
+                <figure><img src="images/desiree-night.jpg" alt="Desiree at night"><figcaption>Desiree at night</figcaption></figure>
+                <figure><img src="images/firefly.jpg" alt="Firefly at night"><figcaption>Firefly at night</figcaption></figure>
+                <figure><img src="images/spacetime.jpg" alt="Spacetime painting"><figcaption>Spacetime</figcaption></figure>
+            </div>
+            <p class="night-sky-desc">These works, together with the telescope painting, are part of a night sky collection.</p>
+        </section>
+
         <div id="gallery" class="gallery"></div>
         <noscript>Please enable JavaScript to view the gallery.</noscript>
     </main>
@@ -48,7 +75,16 @@
                     }
                 };
 
-                images.forEach(name => {
+                const excluded = new Set([
+                    'duckrabbit.jpeg',
+                    'telescope.jpg',
+                    'ade-night-photography.jpg',
+                    'desiree-night.jpg',
+                    'firefly.jpg',
+                    'spacetime.jpg'
+                ]);
+
+                images.filter(name => !excluded.has(name)).forEach(name => {
                     const figure = document.createElement('figure');
                     const img = new Image();
                     const caption = document.createElement('figcaption');
