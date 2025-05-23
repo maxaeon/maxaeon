@@ -13,4 +13,12 @@ window.addEventListener('DOMContentLoaded', () => {
       link.setAttribute('aria-current', 'page');
     }
   });
+
+  const footer = document.querySelector('footer');
+  if (footer) {
+    fetch('/footer.html')
+      .then(r => r.text())
+      .then(html => { footer.innerHTML = html; })
+      .catch(err => console.error('Footer load failed', err));
+  }
 });

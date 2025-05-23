@@ -190,3 +190,9 @@ main > section {
     text-decoration: none;
     z-index: 1000;
 }
+
+.copyright {
+    display: block;
+    text-align: center;
+}
+
