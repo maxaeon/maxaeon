@@ -18,6 +18,14 @@ img {
     height: auto;
 }
 
+/* Limit the size of hero images on the home page */
+#about img,
+#education img {
+    max-width: 300px;
+    display: block;
+    margin: 0 auto 20px;
+}
+
 nav ul {
     list-style: none;
     padding: 0;
