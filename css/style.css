@@ -24,6 +24,13 @@ h1, h2, h3 {
 img {
     max-width: 100%;
     height: auto;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+/* Default size and centering for images within main content */
+main img {
+    max-width: 300px;
 }
 
 /* Limit the size of hero images on the home page */
@@ -142,6 +149,7 @@ main > section {
 .gallery img {
     width: 100%;
     height: auto;
+    margin: 0;
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
@@ -198,5 +206,5 @@ main > section {
 
 footer {
     padding: 20px 0;
-    text-align: center;
+    text-align: left;
 }
