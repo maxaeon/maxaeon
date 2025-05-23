@@ -155,3 +155,25 @@ main > section {
 .gallery figure:hover figcaption {
     opacity: 1;
 }
+
+/* Skip link for accessibility */
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.skip-link:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 10px;
+    padding: 10px 15px;
+    background: var(--accent-color);
+    color: #fff;
+    text-decoration: none;
+    z-index: 1000;
+}
