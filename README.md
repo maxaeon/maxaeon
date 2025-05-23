@@ -1,6 +1,6 @@
 # Max Aeon Parks
 
-I'm a researcher and educator specializing in the Philosophy of Artificial Intelligence (AI) and Human Factors within AI systems, particularly from a computer science perspective. My work investigates how AI can be ethically developed and integrated into human environments, focusing on bias mitigation, emotional intelligence benchmarks, and the extended cognition hypothesis.
+I'm a researcher and educator specializing in the Philosophy of Artificial Intelligence (AI) and Human Factors within AI systems, particularly from a computer science perspective. My work investigates how AI can be ethically developed and integrated into human environments, focusing on bias mitigation, emotional intelligence, current and future benchmarks, and the extended cognition hypothesis.
 
 ## Research Interests
 
