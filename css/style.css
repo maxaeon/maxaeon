@@ -38,6 +38,19 @@ main img {
     max-width: 150px;
 }
 
+/* Display two images side by side in the educational work section */
+.image-row {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.image-row img {
+    height: 150px;
+    width: auto;
+}
+
 /* Limit the size of hero images on the home page */
 #about img,
 #education img {
