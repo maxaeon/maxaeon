@@ -11,8 +11,26 @@
         <a href="../index.html">Home</a>
     </nav>
     <main>
-        <h1>Art</h1>
+        <h1>Art Portfolio</h1>
         <p>Gallery and information about artistic projects.</p>
+        <div id="gallery" class="gallery"></div>
+        <noscript>Please enable JavaScript to view the gallery.</noscript>
     </main>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        fetch('images.json')
+            .then(r => r.json())
+            .then(images => {
+                const gallery = document.getElementById('gallery');
+                images.forEach(name => {
+                    const img = document.createElement('img');
+                    img.src = `images/${name}`;
+                    img.alt = name;
+                    gallery.appendChild(img);
+                });
+            })
+            .catch(err => console.error('Could not load gallery', err));
+    });
+    </script>
 </body>
 </html>
