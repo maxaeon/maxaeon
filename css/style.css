@@ -227,7 +227,28 @@ footer {
     text-align: left;
 }
 
+.featured-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255,255,255,0.3) transparent;
+}
+
+.featured-slider::-webkit-scrollbar {
+    height: 8px;
+}
+
+.featured-slider::-webkit-scrollbar-thumb {
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 4px;
+}
+
+
 .featured-image {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    max-width: 600px;
     margin-bottom: 20px;
 }
 
