@@ -19,3 +19,19 @@ www.linkedin.com/in/maxaeon
 
 
 <img align="right" alt="MaxAeon's Github Stats" src="https://github-readme-stats.vercel.app/api?username=maxaeon&show_icons=true&hide_border=true" />
+
+## Editing the Site
+The landing page and topic pages are simple HTML files. Edit `index.html` in the
+repository root to update the main navigation or text. Each topic folder
+(`philosophy-ai/`, `computer-science/`, `philosophy/`, `art/`) also contains an
+`index.html` you can modify with your own content.
+
+## Enabling GitHub Pages
+1. Open your repository **Settings** and navigate to **Pages**.
+2. Select the branch that contains these files and choose `/ (root)` as the
+   folder.
+3. Save your settings and GitHub will build your site.
+
+## Updating the Philosophy Game Link
+If the game URL ever changes, edit the `href` value of the `game-link` anchor in
+`index.html` so visitors are directed to the correct location.
