@@ -68,7 +68,8 @@ nav ul li a {
     border-bottom: 2px solid transparent;
 }
 
-nav ul li a:hover {
+nav ul li a:hover,
+nav ul li a:focus {
     background: #292929;
 }
 
@@ -80,8 +81,14 @@ nav a {
     transition: background 0.3s, color 0.3s;
 }
 
-nav a:hover {
+nav a:hover,
+nav a:focus {
     background: #292929;
+}
+
+nav a:focus {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 2px;
 }
 
 nav a.active {
@@ -114,8 +121,14 @@ main > section {
     transition: background 0.3s;
 }
 
-.game-link:hover {
+.game-link:hover,
+.game-link:focus {
     background: #0096a6;
+}
+
+.game-link:focus {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 2px;
 }
 
 .gallery {
