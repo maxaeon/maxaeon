@@ -8,6 +8,8 @@ const captionsFile = path.join(__dirname, '../art/captions.json');
 const formatCaption = name =>
   name.replace(/\.[^/.]+$/, '')
       .replace(/[-_]+/g, ' ')
+      .replace(/\d+/g, ' ')
+      .replace(/\s+/g, ' ')
       .trim();
 
 const files = fs.readdirSync(imageDir)
