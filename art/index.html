@@ -62,7 +62,6 @@
         if (slider && captionEl) {
             const figures = Array.from(slider.querySelectorAll('.featured-image'));
             const captions = figures.map(f => f.querySelector('figcaption').innerHTML);
-            captionEl.innerHTML = captions[0] || '';
 
             const updateCaption = () => {
                 const index = Math.round(slider.scrollLeft / slider.clientWidth);
