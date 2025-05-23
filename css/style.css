@@ -226,3 +226,33 @@ footer {
     padding: 20px 0;
     text-align: left;
 }
+
+.featured-image {
+    margin-bottom: 20px;
+}
+
+.featured-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.night-sky-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.night-sky-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.night-sky-desc {
+    text-align: center;
+    margin-bottom: 20px;
+}
