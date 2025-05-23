@@ -18,9 +18,11 @@
     </main>
     <script>
     document.addEventListener('DOMContentLoaded', () => {
-        fetch('images.json')
-            .then(r => r.json())
-            .then(images => {
+        Promise.all([
+            fetch('images.json').then(r => r.json()),
+            fetch('captions.json').then(r => r.json()).catch(() => ({}))
+        ])
+            .then(([images, captions]) => {
                 const gallery = document.getElementById('gallery');
                 const wrappers = [];
                 let loaded = 0;
@@ -43,9 +45,11 @@
                     const img = new Image();
                     const caption = document.createElement('figcaption');
 
+                    const desc = captions[name] || formatCaption(name);
+
                     img.src = `images/${name}`;
-                    img.alt = name;
-                    caption.textContent = formatCaption(name);
+                    img.alt = desc;
+                    caption.textContent = desc;
 
                     img.addEventListener('load', () => {
                         loaded++;
