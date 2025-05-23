@@ -261,9 +261,13 @@ footer {
 
 .night-sky-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 10px;
     margin-bottom: 10px;
+}
+
+.night-sky-grid figcaption {
+    display: none;
 }
 
 .night-sky-grid img {
