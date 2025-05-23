@@ -26,13 +26,3 @@ Feel free to reach out for collaborations, speaking engagements, or questions:
 * **Email**: \[[maxaeonparks@gmail.com](mailto:maxaeonparks@gmail.com)]
 * **GitHub**: \[github.com/maxaeon]
 * **Website**: [maparks.com](https://maparks.com)
-
-## Enabling GitHub Pages
-1. Open your repository **Settings** and navigate to **Pages**.
-2. Select the branch that contains these files and choose `/ (root)` as the
-   folder.
-3. Save your settings and GitHub will build your site.
-
-## Updating the Philosophy Game Link
-If the game URL ever changes, edit the `href` value of the `game-link` anchor in
-`index.html` so visitors are directed to the correct location.
