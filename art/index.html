@@ -22,12 +22,42 @@
             .then(r => r.json())
             .then(images => {
                 const gallery = document.getElementById('gallery');
+                const wrappers = [];
+                let loaded = 0;
+
+                const formatCaption = name =>
+                    name.replace(/\.[^/.]+$/, '')
+                        .replace(/[-_]+/g, ' ')
+                        .trim();
+
+                const checkDone = () => {
+                    if (loaded === wrappers.length) {
+                        wrappers
+                            .sort((a, b) => a.img.naturalHeight - b.img.naturalHeight)
+                            .forEach(w => gallery.appendChild(w.figure));
+                    }
+                };
+
                 images.forEach(name => {
-                    const img = document.createElement('img');
+                    const figure = document.createElement('figure');
+                    const img = new Image();
+                    const caption = document.createElement('figcaption');
+
                     img.src = `images/${name}`;
                     img.alt = name;
-                    gallery.appendChild(img);
+                    caption.textContent = formatCaption(name);
+
+                    img.addEventListener('load', () => {
+                        loaded++;
+                        checkDone();
+                    });
+
+                    figure.appendChild(img);
+                    figure.appendChild(caption);
+                    wrappers.push({ figure, img });
                 });
+
+                checkDone();
             })
             .catch(err => console.error('Could not load gallery', err));
     });
