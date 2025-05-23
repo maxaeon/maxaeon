@@ -35,6 +35,7 @@
                     </figcaption>
                 </figure>
             </div>
+            <p id="featured-caption" class="featured-caption"></p>
         </section>
 
         <section class="night-sky">
@@ -56,6 +57,27 @@
     <footer></footer>
     <script>
     document.addEventListener('DOMContentLoaded', () => {
+        const slider = document.querySelector('.featured-slider');
+        const captionEl = document.getElementById('featured-caption');
+        if (slider && captionEl) {
+            const figures = Array.from(slider.querySelectorAll('.featured-image'));
+            const captions = figures.map(f => f.querySelector('figcaption').innerHTML);
+            captionEl.innerHTML = captions[0] || '';
+
+            const updateCaption = () => {
+                const index = Math.round(slider.scrollLeft / slider.clientWidth);
+                captionEl.innerHTML = captions[index] || '';
+            };
+
+            slider.addEventListener('scroll', () => requestAnimationFrame(updateCaption));
+
+            figures.forEach((fig, i) => {
+                fig.addEventListener('click', () => {
+                    slider.scrollTo({ left: i * slider.clientWidth, behavior: 'smooth' });
+                });
+            });
+        }
+
         Promise.all([
             fetch('images.json').then(r => r.json()),
             fetch('captions.json').then(r => r.json()).catch(() => ({}))

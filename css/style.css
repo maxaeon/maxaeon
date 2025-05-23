@@ -16,9 +16,24 @@ body {
 }
 
 h1, h2, h3 {
-    color: var(--text-color);
     margin-top: 0;
     font-weight: 600;
+    color: var(--text-color);
+}
+
+h1 {
+    font-size: 2.2rem;
+    color: var(--text-light);
+}
+
+h2 {
+    font-size: 1.6rem;
+    color: var(--accent-color);
+}
+
+h3 {
+    font-size: 1.3rem;
+    color: var(--text-color);
 }
 
 img {
@@ -233,6 +248,7 @@ footer {
     scroll-snap-type: x mandatory;
     scrollbar-width: thin;
     scrollbar-color: rgba(255,255,255,0.3) transparent;
+    margin-bottom: 30px;
 }
 
 .featured-slider::-webkit-scrollbar {
@@ -259,6 +275,15 @@ footer {
     box-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
 
+.featured-image figcaption {
+    display: none;
+}
+
+.featured-caption {
+    text-align: center;
+    margin-top: 10px;
+}
+
 .night-sky-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -275,9 +300,14 @@ footer {
     height: auto;
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    border: 1px solid rgba(255,255,255,0.1);
 }
 
 .night-sky-desc {
     text-align: center;
     margin-bottom: 20px;
+}
+
+#other-art {
+    margin-top: 40px;
 }
