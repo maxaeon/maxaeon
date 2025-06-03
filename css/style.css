@@ -136,56 +136,6 @@ nav a.active {
     border-bottom-color: var(--accent-color);
 }
 
-/* Dropdown navigation used on the research page */
-nav .dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-nav .dropdown button {
-    background: rgba(31, 31, 31, 0.9);
-    color: var(--text-light);
-    padding: 10px 15px;
-    border: none;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-nav .dropdown button:hover,
-nav .dropdown button:focus {
-    background: #292929;
-}
-
-nav .dropdown-content {
-    display: none;
-    position: absolute;
-    left: 0;
-    top: 100%;
-    min-width: 160px;
-    background: var(--surface-color);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
-    z-index: 1;
-}
-
-nav .dropdown-content a {
-    display: block;
-    padding: 10px 15px;
-    color: var(--text-light);
-    text-decoration: none;
-}
-
-nav .dropdown-content a:hover,
-nav .dropdown-content a:focus {
-    background: #292929;
-}
-
-nav .dropdown:hover .dropdown-content,
-nav .dropdown:focus-within .dropdown-content {
-    display: block;
-}
-
 main {
     padding: 20px;
     max-width: 960px;
