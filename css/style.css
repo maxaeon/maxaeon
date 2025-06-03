@@ -69,7 +69,7 @@ main img {
 /* Limit the size of hero images on the home page */
 #about img,
 #education img {
-    max-width: 300px;
+    max-width: 200px;
     display: block;
     margin: 0 auto 20px;
 }
