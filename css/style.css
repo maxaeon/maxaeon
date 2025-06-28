@@ -328,3 +328,13 @@ footer {
 #other-art {
     margin-top: 40px;
 }
+
+#projects a {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+#projects a:hover,
+#projects a:focus {
+    color: #0096a6;
+}
